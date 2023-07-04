@@ -62,8 +62,7 @@ def coin_likelihood(roll, bias):
     return pow(bias, numHeads) * pow(1-bias, flips-numHeads)  # Calculate the likelihood of the roll 
 
 
-x = [ "HTTTHHTHTH", "HHHHTHHHHH", "HTHHHHHTHH", 
-          "HTHTTTHHTT", "THHHTHHHTH" ]
+x = ['HHHHHTTTTTHHH', 'HHTHHTHTHTHHT', 'HHTHTTHTHTHTT', 'TTTHTTHTHTHTT', 'THTHTTHTHTHHH']
 thetas, _ = coin_em(rolls = x, theta_A = 0.6, theta_B = 0.5, maxiter=6)
 
 
